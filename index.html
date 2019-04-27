@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scottish Football Card Collector</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <h1>Scottish Football Card Collector</h1>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Player Name</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="form-item">
+          <label for="team_name" class="primary">Team Name</label>
+          <input type="text" id="team_name" required>
+        </div>
+
+        <div class="form-item">
+          <label for="card_colour" class="primary">Card Colour</label>
+          <select id="card_colour">
+            <option value="" disabled selected>Please select card colour...</option>
+            <option id="yellowCard" value="Yellow Card">Yellow Card</option>
+            <option id="redCard" value="Red Card">Red Card</option>
+          </select>
+
+        </div>
+
+        <div class="form-item">
+          <label for="opponent" class="primary">Opponent</label>
+          <input type="text" id="opponent" required>
+        </div>
+
+        <div class="form-item">
+          <label for="match_date" class="primary">Match Date</label>
+          <input type="text" id="match_date" required>
+        </div>
+
+      </div>
+      <input type="submit" value="Add Card"/>
+
+    </form>
+
+      <button id="delete-all">Delete All</button>
+
+    <h2>Current Bookings and Red Cards</h2>
+    <div id="card-list"></div>
+  </body>
+</html>

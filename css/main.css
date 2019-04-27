@@ -1,0 +1,63 @@
+body {
+  font-family: tahoma;
+  background-image: url(http://www.fcbanants.am/uploads/images/590d8f5e5cc2e.jpg);
+  color: white;
+  background-size: cover;
+
+}
+
+h1 {
+  font-size: 40pt;
+  font-weight: bold;
+  text-shadow: 3pt;
+  text-align: center;
+
+
+}
+
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.form-item {
+  margin-right: 1.8rem;
+}
+
+label.primary {
+  display: block;
+  margin: 0.4em 0;
+}
+
+
+button, input[type="submit"] {
+  margin-top: 1rem;
+}
+
+#card-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.cardColourRed{
+    background-color: red;
+    padding: 40px;
+    text-align: center;
+}
+
+.cardColourYellow {
+  background-color: yellow;
+  padding: 40px;
+  text-align: center;
+}
+
+.card-list-item {
+  margin: 5pt 5pt;
+  padding: 2px 2px;
+  border: 1px solid black;
+  border-radius: 5%;
+  background: white;
+  color: black;
+}
