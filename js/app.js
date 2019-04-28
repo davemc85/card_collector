@@ -22,11 +22,11 @@ const createCardListItem = function (form) {
   cardListItem.classList.add('card-list-item');
 
   const name = document.createElement('h3');
-  name.textContent = `Player Name: ${form.name.value}`;
+  name.textContent = `Player: ${form.name.value}`;
   cardListItem.appendChild(name);
 
   const team_name = document.createElement('h4');
-  team_name.textContent = `Team Name: ${form.team_name.value}`;
+  team_name.textContent = `Team: ${form.team_name.value}`;
   cardListItem.appendChild(team_name);
 
   const match_date = document.createElement('h4');
@@ -36,6 +36,10 @@ const createCardListItem = function (form) {
   const opponent = document.createElement('h4');
   opponent.textContent = `Opponent: ${form.opponent.value}`;
   cardListItem.appendChild(opponent);
+
+  const reason = document.createElement('h4');
+  reason.textContent = `Reason: ${form.reason.value}`;
+  cardListItem.appendChild(reason);
 
   const card_colour = document.createElement('h4');
   card_colour.textContent = form.card_colour.value;
@@ -58,18 +62,3 @@ const handleDeleteAllClick = function(event) {
   const cardList = document.querySelector('#card-list');
   cardList.innerHTML = '';
 }
-
-
-
-
-// d
-//   const itemGrab = event.target.ingredient.value;
-//   const quantityGrab = event.target.quantity.value;
-//   const measurementGrab = event.target.measurement.value;
-//   const preparationGrab = event.target.preparation.value;
-//   targetDiv = document.querySelector('#recipe-list')
-//   const newDiv = document.createElement("li");
-//   newDiv.innerHTML = `<h3>${quantityGrab} ${measurementGrab} ${itemGrab} ${preparationGrab}</h3>`;
-//   newDiv.className = "recipe-list-item";
-//   targetDiv.appendChild(newDiv);
-//   form.reset();

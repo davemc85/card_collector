@@ -20,14 +20,23 @@
           <input type="text" id="team_name" required>
         </div>
 
-        <div class="form-item">
+        <!-- <div class="form-item">
           <label for="card_colour" class="primary">Card Colour</label>
           <select id="card_colour">
             <option value="" disabled selected>Please select card colour...</option>
             <option id="yellowCard" value="Yellow Card">Yellow Card</option>
             <option id="redCard" value="Red Card">Red Card</option>
           </select>
+        </div> -->
 
+        <div class="form-item">
+            <fieldset>
+              <ul class="radio">
+                <li><input type="radio" name="card_colour" id="yellowCard" value="Yellow Card"/><label for="yellowCard" class="primary">Yellow Card</label></li>
+
+                <li><input type="radio" name="card_colour" id="redCard" value="Red Card"/><label for="redCard" class="primary">Red Card</label></li>
+              </ul>
+            </fieldset>
         </div>
 
         <div class="form-item">
@@ -40,12 +49,24 @@
           <input type="text" id="match_date" required>
         </div>
 
+        <div class="form-item">
+          <label for="reason" class="primary">Reason</label>
+          <select id="reason">
+            <option value="" disabled selected>Reason for card...</option>
+            <option id="dissent" value="Dissent">Dissent</option>
+            <option id="foul" value="Foul">foul</option>
+            <option id="swearing" value="Swearing">Swearing</option>
+            <option id="dangerousPlay" value="Dangerous Play">Dangerous Play</option>
+            <option id="violentConduct" value="Violent Conduct">Violent Conduct</option>
+          </select>
+        </div>
+
       </div>
       <input type="submit" value="Add Card"/>
 
     </form>
 
-      <button id="delete-all">Delete All</button>
+      <button id="delete-all">Delete All Cards</button>
 
     <h2>Current Bookings and Red Cards</h2>
     <div id="card-list"></div>

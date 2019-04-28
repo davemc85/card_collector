@@ -3,7 +3,13 @@ body {
   background-image: url(https://st2.depositphotos.com/1502607/10186/i/950/depositphotos_101860542-stock-photo-green-grass-soccer-field-background.jpg);
   color: white;
   background-size: cover;
+  margin: 30pt;
+}
 
+form {
+  width: auto;
+  text-align: left;
+  margin: auto;
 }
 
 h1 {
@@ -11,9 +17,31 @@ h1 {
   font-weight: bold;
   text-shadow: 3pt;
   text-align: center;
-
-
 }
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.primary{
+  font-size: 12pt;
+}
+select{
+  font-size: 12pt;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: 20px;
+  list-style: none;
+  list-style-type: none;
+  margin: auto;
+}
+
 
 #form-wrapper {
   width: 100%;
@@ -25,9 +53,21 @@ h1 {
   margin-right: 1.8rem;
 }
 
+input {
+
+  text-shadow:none;
+  font-size: 12pt;
+}
+
+.form-select {
+  color: deeppink;
+  font-size: 12pt;
+  font: inherit;
+}
+
 label.primary {
-  display: block;
-  margin: 0.4em 0;
+  display: flex;
+  margin: 5pt;
 }
 
 
